@@ -1,15 +1,82 @@
-:root{
-  --bg:#0f1724; --card:#232946; --muted:#9aa4b2; --accent:#6c8cff;
-  --max:900px;
+/* Global Dark Theme */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117; /* GitHub Dark */
+    color: #e6edf3;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
 }
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#e6eef8;line-height:1.5}
-.container{max-width:var(--max);margin:0 auto;padding:2rem}
-.hero{background:linear-gradient(180deg, #2b3350, #232946);padding:4rem 0;border-radius:8px;margin:2rem}
-.hero h1{margin:0;font-size:2.25rem}
-.hero .tag{color:var(--muted);margin-top:.5rem}
-.btn{display:inline-block;margin-top:1rem;padding:.5rem 1rem;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none}
-h2{color:#fff;margin-top:2rem}
-a{color:var(--accent)}
-footer{padding:2rem 0;color:var(--muted);text-align:center}
-@media (max-width:640px){.hero{padding:2rem}.container{padding:1rem}}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #58a6ff;
+}
+
+.hero h2 {
+    margin-top: -10px;
+    font-size: 1.2rem;
+    color: #9eb6d9;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #238636; /* GitHub green */
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: #2ea043;
+}
+
+/* Section Headers */
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+/* Project List */
+.project-list a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #8b949e;
+    font-size: 0.9rem;
+}
